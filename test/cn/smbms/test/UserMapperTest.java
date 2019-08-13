@@ -2,7 +2,6 @@ package cn.smbms.test;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
-
 import cn.smbms.dao.user.UserMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -55,5 +54,4 @@ public class UserMapperTest {
 			sqlSession.close();
 		}
 	}
-
 }
