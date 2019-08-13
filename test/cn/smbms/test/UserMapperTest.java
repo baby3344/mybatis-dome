@@ -1,8 +1,8 @@
 package cn.smbms.test;
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+
 import cn.smbms.dao.user.UserMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -18,10 +18,10 @@ public class UserMapperTest {
 	@Test
 	public void testGetUserList(){
 		SqlSession sqlSession=null;
-		List<User> userList=new ArrayList<>();
+		List<User> userList=new ArrayList<User>();
 		try {
 			sqlSession=MyBatisUtil.createSqlSession();
-			//调用selectList方法执行查询操作
+			//使用映射器执行查询操作
 			userList=sqlSession.getMapper(UserMapper.class).getUserList();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -36,7 +36,7 @@ public class UserMapperTest {
 	@Test
 	public void test() {
 		String resource = "mybatis-config.xml";
-		int count = 0;
+		int count =0;
 		SqlSession sqlSession = null;
 		try {
 			//1 获取mybatis-config.xml的输入流

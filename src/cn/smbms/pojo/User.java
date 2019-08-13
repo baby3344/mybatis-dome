@@ -3,121 +3,102 @@ package cn.smbms.pojo;
 import java.util.Date;
 
 public class User {
-	public int getId() {
+	private Integer id; //id
+	private String userCode; //ç”¨æˆ·ç¼–ç 
+	private String userName; //ç”¨æˆ·åç§°
+	private String userPassword; //ç”¨æˆ·å¯†ç 
+	private Integer gender;  //æ€§åˆ«
+	private Date birthday;  //å‡ºç”Ÿæ—¥æœŸ
+	private String phone;   //ç”µè¯
+	private String address; //åœ°å€
+	private Integer userRole;    //ç”¨æˆ·è§’è‰²
+	private String userRoleName; //è§’è‰²åç§°
+	private Integer createdBy;   //åˆ›å»ºè€…
+	private Date creationDate; //åˆ›å»ºæ—¶é—´
+	private Integer modifyBy;     //æ›´æ–°è€…
+	private Date modifyDate;   //æ›´æ–°æ—¶é—´
+	public Integer getId() {
 		return id;
 	}
-
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
-
 	public String getUserCode() {
 		return userCode;
 	}
-
 	public void setUserCode(String userCode) {
 		this.userCode = userCode;
 	}
-
 	public String getUserName() {
 		return userName;
 	}
-
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
-
 	public String getUserPassword() {
 		return userPassword;
 	}
-
 	public void setUserPassword(String userPassword) {
 		this.userPassword = userPassword;
 	}
-
-	public int getGender() {
+	public Integer getGender() {
 		return gender;
 	}
-
-	public void setGender(int gender) {
+	public void setGender(Integer gender) {
 		this.gender = gender;
 	}
-
-	public String getPhone() {
-		return phone;
-	}
-
-	public void setPhone(String phone) {
-		this.phone = phone;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
-		this.address = address;
-	}
-
-	public int getUserRole() {
-		return userRole;
-	}
-
-	public void setUserRole(int userRole) {
-		this.userRole = userRole;
-	}
-
-	public Date getCreationDate() {
-		return creationDate;
-	}
-
-	public void setCreationDate(Date creationDate) {
-		this.creationDate = creationDate;
-	}
-
-	public int getModifyBy() {
-		return modifyBy;
-	}
-
-	public void setModifyBy(int modifyBy) {
-		this.modifyBy = modifyBy;
-	}
-
 	public Date getBirthday() {
 		return birthday;
 	}
-
 	public void setBirthday(Date birthday) {
 		this.birthday = birthday;
 	}
-
-	public int getCreatedBy() {
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public Integer getUserRole() {
+		return userRole;
+	}
+	public void setUserRole(Integer userRole) {
+		this.userRole = userRole;
+	}
+	public String getUserRoleName() {
+		return userRoleName;
+	}
+	public void setUserRoleName(String userRoleName) {
+		this.userRoleName = userRoleName;
+	}
+	public Integer getCreatedBy() {
 		return createdBy;
 	}
-
-	public void setCreatedBy(int createdBy) {
+	public void setCreatedBy(Integer createdBy) {
 		this.createdBy = createdBy;
 	}
-
-	private int id; // id
-	private String userCode; // ÓÃ»§ÓÊ±à
-	private String userName; // ÓÃ»§Ãû³Æ
-	private String userPassword; // ÓÃ»§ÃÜÂë
-	private int gender; // ĞÔ±ğ
-	private Date birthday; // ³öÉúÈÕÆÚ
-	private String phone; // µç»°
-	private String address; // µØÖ·
-	private int userRole; // ÓÃ»§½ÇÉ«
-	private int createdBy; // ´´½¨Õß
-	private Date creationDate; // ´´½¨Ê±¼ä
-	private int modifyBy; // ¸üĞÂÕß
-	private Date modifyByDate; // ¸üĞÂÊ±¼ä
-
-	public Date getModifyByDate() {
-		return modifyByDate;
+	public Date getCreationDate() {
+		return creationDate;
 	}
-
-	public void setModifyByDate(Date modifyByDate) {
-		this.modifyByDate = modifyByDate;
+	public void setCreationDate(Date creationDate) {
+		this.creationDate = creationDate;
+	}
+	public Integer getModifyBy() {
+		return modifyBy;
+	}
+	public void setModifyBy(Integer modifyBy) {
+		this.modifyBy = modifyBy;
+	}
+	public Date getModifyDate() {
+		return modifyDate;
+	}
+	public void setModifyDate(Date modifyDate) {
+		this.modifyDate = modifyDate;
 	}
 }

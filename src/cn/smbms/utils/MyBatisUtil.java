@@ -19,7 +19,7 @@ public class MyBatisUtil {
       }
       
       public static SqlSession createSqlSession(){
-    	  return factory.openSession(false);  //true为自动提交事务
+    	  return factory.openSession(false);
       }
       
       public static void closeSession(SqlSession sqlSession){
